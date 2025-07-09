@@ -2,3 +2,46 @@ div {
     background-color: slategray;
     color: white;
 }
+
+
+.container {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    text-align: center;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    line-height: 1.6;
+}
+
+.container::before{
+    content: '';
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255,255,255,0.1) 25%, transparent 25%),
+                linear-gradient(-45deg, rgba(255,255,255,0.1) 25%, transparent 25%);
+    background-size: 60px 60px;
+    animation: moveBackground 15s linear infinite;
+}
+
+@keyframes moveBackground {
+    0% { background-position: 0 0; }
+    100% { background-position: 60px 60px; }
+}
+
+.container-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.container p {
+    margin: auto;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+}
