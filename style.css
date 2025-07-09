@@ -2,3 +2,24 @@ div {
     background-color: slategray;
     color: white;
 }
+.header {
+background-color: turquoise;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header p {
+    margin: 5px 0 0 20px;
+    font-size: 14px;
+}
